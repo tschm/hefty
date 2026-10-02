@@ -41,10 +41,16 @@ To run the example Jupyter notebooks, you also need `jupyter`:
 pip install jupyter
 ```
 
-If you want to use ECMWF CAMS, you also need `cdsapi` (and an API key, see https://ads.atmosphere.copernicus.eu/how-to-api):
+If you want to use ECMWF CAMS, you also need `cdsapi` (and an API key, see https://ads.atmosphere.copernicus.eu/how-to-api), which the `cams` extra installs:
 
 ```
-pip install cdsapi
+pip install "hefty[cams]"
+```
+
+If you want to use [dynamical.org](https://dynamical.org) as a data source (`priority='dynamical'`), you also need `dynamical-catalog` and `cartopy`, which the `dynamical` extra installs:
+
+```
+pip install "hefty[dynamical]"
 ```
 
 ## Quick example
